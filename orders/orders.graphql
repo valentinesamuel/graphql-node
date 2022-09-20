@@ -1,14 +1,22 @@
 type Query {
+  "List of all orders"
   orders: [Order]
 }
 
+"An order object"
 type Order {
+  "The date an order was plaaced"
   date: String!
+  "Sub total of all the items in an order"
   subtotal: Float!
+  "List of items in an order"
   items: [OrderItem]
 }
 
+"An order object"
 type OrderItem {
+  "A product that is being ordered"
   product: Product!
+  "the number of this product in this order item"
   quantity: Int!
 }
