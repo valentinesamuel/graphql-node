@@ -15,7 +15,8 @@ const root = {
 const app = express()
 app.use('/graphql',graphqlHTTP({
     schema: schema,
-    rootValue:root
+    rootValue: root,
+    graphiql: true
 }))
 app.listen(3000, () => {
     console.log('GraphQL server is running')
