@@ -10,7 +10,15 @@ const orders = [
                     price: 45.11
                 },
                 quantity: 2,
-            }
+            },
+            {
+                product: {
+                    id: 'whiteshirt',
+                    description: 'White Shirt',
+                    price: 10.04
+                },
+                quantity: 2,
+            },
         ]
     }
 ]
