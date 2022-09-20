@@ -42,11 +42,20 @@ function addNewProduct(id, description, price) {
     products.push(newProduct)
     return newProduct
 }
+function addNewProductReview(productId, rating, comment) {
+    const product = getProductById(productId)
+    if (product) {
+        const productReview = { rating, comment }
+        product.reviews.push(productReview)
+        return product
+    }
+}
 
 module.exports = {
     getAllProducts,
     getProductsByPrice,
     getProductById,
-    addNewProduct
+    addNewProduct,
+    addNewProductReview
 
 }
