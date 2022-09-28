@@ -1,2 +1,2 @@
 # graphql-node
-An example of graphql in node
+An example of graphql api in node
